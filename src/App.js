@@ -1,7 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Counter from './counter'
 
+const initialState = {
+  state: 0
+};
 function App() {
   return (
     <div className="App">
@@ -18,6 +22,7 @@ function App() {
         >
           Learn React
         </a>
+        <Counter  { ...initialState } />
       </header>
     </div>
   );
